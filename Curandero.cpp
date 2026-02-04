@@ -17,7 +17,12 @@ void Curandero::curar(){
         nuevoHp = maxHp;
     }
     setSalud(nuevoHp);
-    cout << "Curación: +" << curacion << "| HP actual: " << getSalud() << endl;
+    int curado = nuevoHp - hp;
+    if (curado == 0) {
+        cout << "Ya estas al maximo." << endl;
+    } else {
+        cout << "Curacion: +" << curado << " | HP actual: " << getSalud() << endl;
+    }
 }
 
 void Curandero::imprimir(){

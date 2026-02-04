@@ -10,7 +10,7 @@ Tanque::Tanque(int _vida, int _salud, int _ataque, int _nivel, int _refuerzo):Pe
 void Tanque::reforzar(){
     int roll = rand() % 100;
     if (roll < refuerzo) {       //Si el roll es menor a refuerzo, es invulnerable por 2 turnos
-        turnosInvulnerable = 3;
+        turnosInvulnerable = 2;
         cout << "Refuerzo activado: invulnerable por 2 turnos" << endl;
     } else {
         cout << "Refuerzo fallo" << endl;
