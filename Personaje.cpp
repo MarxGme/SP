@@ -109,3 +109,6 @@ void Personaje::imprimir(){
     cout << "NIVEL: " << getNivel() << endl;
     barraSalud();
 }
+void Personaje::habilidad() {
+    // Habilidad por defecto (sin efecto)
+}

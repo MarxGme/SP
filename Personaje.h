@@ -36,9 +36,10 @@ public:
     int calcularSalud();
     void barraSalud();
     int calculaAtaque(Personaje& objetivo);
-    void recibeAtaque(int ptosAtaque);
+    virtual void recibeAtaque(int ptosAtaque);
     void atacar(Personaje& objetivo);
-    void imprimir();
+    virtual void imprimir();
+    virtual void habilidad();
     
 
 
